@@ -1,9 +1,9 @@
 defmodule Webcrawler do
   @moduledoc """
-  Webcrawler keeps the contexts that define your domain
-  and business logic.
+  Webcrawler is a service for parsing web-sites.
 
-  Contexts are also responsible for managing your data, regardless
-  if it comes from the database, an external API or others.
+  It stores HTML and metadata in Cassandra database.
+
+  It provides crawl and search http API-s.
   """
 end
