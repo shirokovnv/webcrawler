@@ -2,7 +2,7 @@
 
 ![ci.yml][link-ci]
 
-**The service for crawling websites**
+**The service for crawling websites (experimental)**
 
 ## Dependencies
 
