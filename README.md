@@ -30,7 +30,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 1. The user adds new source URL -> new async job started
 2. Inside the job:
 
-- Normalize URL (validate schema, add trailing slash, etc...)
+- Normalize URL (validate schema, remove trailing slash, etc...)
 - Store link in DB, if link already exists, than exit
 - Parse HTML links and metadata
 - Store it in different tables
