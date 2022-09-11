@@ -1,4 +1,4 @@
-CREATE KEYSPACE IF NOT EXISTS storage WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '2' };
+CREATE KEYSPACE IF NOT EXISTS storage WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '1' };
 
 CREATE TABLE IF NOT EXISTS storage.site_statistics (
       source_url text PRIMARY KEY,
