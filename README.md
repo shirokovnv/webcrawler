@@ -1,5 +1,7 @@
 # Webcrawler
 
+![ci.yml][link-ci]
+
 **The service for crawling websites**
 
 ## Dependencies
@@ -61,6 +63,7 @@ See `schema.cql` and `cassandra.yaml` for more detail.
 - Visit [localhost:4000/jobs](http://localhost:4000/jobs) to see crawling jobs in action
 - Visit [localhost:4000/dashboard](http://localhost:4000/dashboard) to see core metrics of the system
 
+[link-ci]: https://github.com/shirokovnv/webcrawler/actions/workflows/ci.yml/badge.svg
 [link-cassandra]: https://cassandra.apache.org/
 [link-sasi]: https://cassandra.apache.org/doc/4.1/cassandra/cql/SASI.html
 [link-docker]: https://www.docker.com/
