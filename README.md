@@ -58,7 +58,7 @@ See `schema.cql` and `cassandra.yaml` for more detail.
 
 ## Useful links
 
-- Visit [localhost:4000/jobs] to see crawling jobs in action
+- Visit [localhost:4000/jobs](http://localhost:4000/jobs) to see crawling jobs in action
 - Visit [localhost:4000/dashboard](http://localhost:4000/dashboard) to see core metrics of the system
 
 [link-cassandra]: https://cassandra.apache.org/
