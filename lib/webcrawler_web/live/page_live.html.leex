@@ -1,0 +1,29 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Webcrawler" %></h1>
+  <p>Parse, store and search information about your favorite websites.</p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Get started</h2>
+    <ul>
+      <li>
+        <a href="<%= Routes.static_path(@socket, "/crawl") %>">Crawl service</a>
+      </li>
+      <li>
+        <a href="<%= Routes.static_path(@socket, "/search") %>">Search service</a>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2>Currently crawled</h2>
+    <ul>
+      <%= for stat <- @site_statistics do %>
+      <li>
+        <a href="<%= Routes.live_path(@socket, WebcrawlerWeb.ResultsLive, stat.url_hash) %>"><%= stat.source_url %></a>
+        <span>(<%= stat.links_count %>)</span>
+      </li>
+      <% end %>
+    </ul>
+  </article>
+</section>

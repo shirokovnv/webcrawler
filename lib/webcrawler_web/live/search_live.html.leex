@@ -1,0 +1,23 @@
+<h1>Search service</h1>
+<form phx-change="search" class="search-form">
+  <%= text_input :search_field, :query, placeholder: "Type something you are looking for", autofocus: true, "phx-debounce": "300" %>
+</form>
+<%= for site <- @sites_by_meta do %>
+  <h4><a href="<%= site.url %>" target="_blank"><%= site.url %></a></h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Keywords</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= site.title %></td>
+        <td><%= site.keywords %></td>
+        <td><%= site.description %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>

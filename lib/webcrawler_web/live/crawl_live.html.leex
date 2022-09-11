@@ -1,0 +1,15 @@
+<h1>Crawl service</h1>
+
+<form phx-change="validate" phx-submit="add">
+  <input placeholder="Type a new link" type="text" name="url_value" phx-debounce="300"/>
+
+  <%= if @error do %>
+  <div class="alert alert-danger"><%= @error %></div>
+  <% end %>
+
+  <button type="submit" <%= if @error do %> disabled="disabled" <% end %>>Add link</button>
+</form>
+
+<%= if @message do %>
+  <div class="alert alert-info"><%= @message %></div>
+<% end %>
