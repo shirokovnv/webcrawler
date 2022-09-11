@@ -64,6 +64,20 @@ config :phoenix, :stacktrace_depth, 20
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
 
+config :webcrawler, :xandra,
+  nodes: [
+    System.get_env("CASSANDRA_HOST") || "cassandra:9042"
+  ],
+  authentication:
+    {Xandra.Authenticator.Password,
+     [
+       username: System.get_env("CASSANDRA_USER"),
+       password: System.get_env("CASSANDRA_PASSWORD")
+     ]},
+  name: :xandra_connection,
+  pool: DBConnection.Poolboy,
+  pool_size: 10
+
 # Exq
 config :exq,
   name: Exq,

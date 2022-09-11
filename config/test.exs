@@ -13,5 +13,8 @@ config :logger, level: :warn
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
 
-config :exq, queue_adapter: Exq.Adapters.Queue.Mock
-config :exq, start_on_application: false
+config :webcrawler, :xandra, name: :xandra_connection
+
+config :exq,
+  queue_adapter: Exq.Adapters.Queue.Mock,
+  start_on_application: false

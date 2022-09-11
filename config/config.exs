@@ -14,20 +14,6 @@ config :webcrawler, WebcrawlerWeb.Endpoint,
   pubsub_server: Webcrawler.PubSub,
   live_view: [signing_salt: "PI81CGly"]
 
-config :webcrawler, :xandra,
-  nodes: [
-    System.get_env("CASSANDRA_HOST") || "cassandra:9042"
-  ],
-  authentication:
-    {Xandra.Authenticator.Password,
-     [
-       username: System.get_env("CASSANDRA_USER"),
-       password: System.get_env("CASSANDRA_PASSWORD")
-     ]},
-  name: :xandra_connection,
-  pool: DBConnection.Poolboy,
-  pool_size: 10
-
 # Configure esbuild (the version is required)
 config :esbuild,
   version: "0.14.29",
