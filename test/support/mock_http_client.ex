@@ -1,4 +1,6 @@
 defmodule FakeHttpClient do
+  @moduledoc false
+
   defstruct []
 end
 
