@@ -40,7 +40,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 3. Thats literally it
 
-**To see it in action, go to the [localhost:4000/crawl](https://localhost:4000/crawl) and type any kind of URL.**
+**To see it in action, go to the** [localhost:4000/crawl](https://localhost:4000/crawl) **and type any kind of URL.**
 
 **To see some search results visit** [localhost:4000/search](http://localhost:4000/search).
 
