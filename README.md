@@ -54,7 +54,7 @@ The default keyspace is `storage`
 - `sites` contains URL and HTML parsed
 - `sites_by_meta` contains URL and parsed metadata
 
-For `LIKE`-style search queries [SASI](link-sasi) index needs to be configured.
+For `LIKE`-style search queries [SASI][link-sasi] index needs to be configured.
 
 See `schema.cql` and `cassandra.yaml` for more detail.
 
